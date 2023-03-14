@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="573.0" prefWidth="1318.0" stylesheets="@../stylesheets/Fields.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LecturersController">
+   <children>
+      <TableView fx:id="lecturersTable" focusTraversable="false" layoutX="239.0" layoutY="97.0" opacity="0.73" prefHeight="260.0" prefWidth="420.0" AnchorPane.leftAnchor="255.0">
+        <columns>
+          <TableColumn fx:id="lecturerIDColumn" prefWidth="137.0" style="-fx-alignment: CENTER;" text="Lecturer ID " />
+          <TableColumn fx:id="lecturerNameColumn" prefWidth="281.0" style="-fx-alignment: CENTER;" text="Name" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="lecturerSearchTextField" focusTraversable="false" layoutX="255.0" layoutY="55.0" prefHeight="25.0" prefWidth="420.0" promptText="Search..." style="-fx-text-fill: #ffffff;" styleClass="input" stylesheets="@../stylesheets/Fields.css">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="lecturerLoadDataBtn" buttonType="RAISED" focusTraversable="false" layoutX="905.0" layoutY="464.0" onAction="#lecturerLoadDataBtnPressed" prefHeight="35.0" prefWidth="105.0" style="-fx-cursor: hand;" text="Load Data" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

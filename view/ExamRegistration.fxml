@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="528.0" prefWidth="1001.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ExamSchedule">
+   <children>
+      <TableView focusTraversable="false" layoutX="213.0" layoutY="85.0" opacity="0.73" prefHeight="359.0" prefWidth="705.0">
+        <columns>
+          <TableColumn minWidth="0.0" prefWidth="95.0" text="Course Name" />
+          <TableColumn prefWidth="55.0" text="Course Code" />
+            <TableColumn prefWidth="75.0" text="Max. Headcount" />
+            <TableColumn prefWidth="75.0" text="Exam Room" />
+            <TableColumn prefWidth="75.0" text="Time" />
+            <TableColumn prefWidth="75.0" text="Register" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField focusTraversable="false" layoutX="213.0" layoutY="44.0" prefHeight="35.0" prefWidth="705.0" promptText="Search..." styleClass="input" stylesheets="@../stylesheets/Fields.css">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+      </TextField>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="905.0" layoutY="464.0" prefHeight="35.0" prefWidth="105.0" style="-fx-cursor: hand;" text="Load Data" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
