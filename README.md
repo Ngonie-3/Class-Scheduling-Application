@@ -1,7 +1,3 @@
-# Dairy-Farm-Management-System
-A project done using JavaFX, Java Mail API and MySQL, whose aim is to handle day to day experiences on a farm.
-Records of animals available, animal type, health and breeding status, weight and milk production are all recorded 
-and accounted for. It also keeps track of the employees on the farm and their respective salaries. 
-The project has not yet reached it's completion stage, development is still in process. 
-
-[Video Demo Link](https://www.youtube.com/channel/UCVMOsNrRS9_-XasQyPCSxEQ).
+This project is a continuation of my Dissertation Work which can be found on my GitHub. On this project, I give 
+a feel of how a modern day student can go about registering for courses in a typical University establishment.
+The application is still being developed, and the framework used is JavaFX. 
